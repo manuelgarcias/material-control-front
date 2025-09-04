@@ -3,7 +3,7 @@ import 'jspdf-autotable';
 
 const getStandardTest = (number) => `Al facturar, por favor citar la liquidación N° ${number}; \
   si tiene alguna duda u objeción, por favor comunicarla antes de emitir la factura. \
-  La factura debe ser enviada al correo facturas@flamecolombia.com, este debe contener el \
+  La factura debe ser enviada al correo example@example.com, este debe contener el \
   xml de validación de la factura electrónica.${'\n'}`;
 
 const printMaterialSettlement = (data) => {
@@ -20,9 +20,9 @@ const printMaterialSettlement = (data) => {
   doc.setFontSize(10.40);
   doc.setTextColor(0, 0, 0);
   doc.setFont('Helvetica', 'bold');
-  doc.text(2.7, 0.71, 'FLAME COLOMBIA S.A.S');
+  doc.text(2.7, 0.71, 'EXAMPLE COLOMBIA S.A.S');
   doc.setFontSize(6.40);
-  doc.text(2.7, 0.86, 'Nit: 901703487-9');
+  doc.text(2.7, 0.86, 'Nit: 000000000-0');
   doc.text(8.65, 1.04, 'Fecha de impresión:');
   doc.text(9.59, 1.04, currentDate);
   doc.text(4.63, 1.29, 'LIQUIDACIÓN DE MATERIAL');
@@ -189,9 +189,9 @@ const printFreightSettlement = (data) => {
   doc.setFontSize(10.40);
   doc.setTextColor(0, 0, 0);
   doc.setFont('Helvetica', 'bold');
-  doc.text(2.7, 0.71, 'FLAME COLOMBIA S.A.S');
+  doc.text(2.7, 0.71, 'EXAMPLE COLOMBIA S.A.S');
   doc.setFontSize(6.40);
-  doc.text(2.7, 0.86, 'Nit: 901703487-9');
+  doc.text(2.7, 0.86, 'Nit: 000000000-0');
   doc.text(8.65, 1.04, 'Fecha de impresión:');
   doc.text(9.59, 1.04, currentDate);
   doc.text(4.63, 1.29, 'LIQUIDACIÓN DE FLETES');
